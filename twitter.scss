@@ -115,7 +115,7 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 /* 引用動画 の表示優先度を下げる */
 [aria-label="タイムライン: タイムラインを検索"] article {
 	&:has(.r-zl2h9q [aria-label="認証済みアカウント"].r-1cvl2hr),
-	&:has([aria-label="さんから"]) {
+	&:has([aria-label$="さんから"]) {
 		max-height: 80px;
 		opacity: 20%;
 	}
