@@ -29,12 +29,16 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 } */
 
 /* 最大行数指定(ツイート) */
-[data-testid="tweetText"] {
-	display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-	-webkit-line-clamp: 6 !important;
+[aria-label="タイムライン: ホームタイムライン"],
+[aria-label="タイムライン: タイムラインを検索"] {
+	[data-testid="tweetText"] {
+		display: -webkit-box;
+		overflow: hidden;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 6 !important;
+	}
 }
+
 
 /* 最大行数指定(引用) */
 .r-1fz3rvf .r-14gqq1x {
@@ -66,7 +70,7 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 }
 
 /* 引用文章 行数調節 */
-.r-1fz3rvf .r-14gqq1x {
+[aria-label^="タイムライン"] .r-1fz3rvf .r-14gqq1x {
 	display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
