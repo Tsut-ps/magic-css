@@ -112,7 +112,9 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 }*/
 
 /* 検索で 認証ユーザー(Blue) の表示優先度を下げる */
-[aria-label="タイムライン: タイムラインを検索"] article:has(.r-zl2h9q [aria-label="認証済みアカウント"].r-1cvl2hr) {
+/* RP の表示優先度を下げる */
+[aria-label="タイムライン: タイムラインを検索"] article:has(.r-zl2h9q [aria-label="認証済みアカウント"].r-1cvl2hr),
+[aria-label="タイムライン: タイムラインを検索"] article:has(.r-14gqq1x) {
 	max-height: 80px;
 	opacity: 20%;
 }
