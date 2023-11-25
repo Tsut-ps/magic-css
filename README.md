@@ -1,1 +1,1 @@
-# magic-css
+# Magic CSS 用のカスタムCSS
