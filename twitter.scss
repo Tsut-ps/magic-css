@@ -140,3 +140,8 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 		flex-direction: column;
 	}
 }
+
+/* 自身のフォロワー数を非表示にする */
+a[href="/Tsut_ps/verified_followers"] .r-1b43r93:first-child {
+	display: none;
+}
