@@ -142,6 +142,30 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 }
 
 /* 自身のフォロワー数を非表示にする */
-a[href="/Tsut_ps/verified_followers"] .r-1b43r93:first-child {
+a[href="/Tsut_ps/verified_followers"] .r-1b43r93:first-child,
+a[href="/kokonkr/verified_followers"] .r-1b43r93:first-child {
 	display: none;
+}
+
+/* スマホサイズ時に左側タブ非表示 */
+@media screen and (max-width: 480px) {
+	[role="banner"] {
+		display: none;
+	}
+}
+
+/* トレンドタブを薄くする */
+[aria-label="タイムライン: トレンド"] {
+	opacity: 0.33
+}
+
+/* インタラクトを非表示 */
+[aria-label^="タイムライン: 狐紺くろ"] {
+	article {
+		padding-bottom: .25em;
+		
+		[role="group"] {
+			display: none;
+		}
+	}
 }
