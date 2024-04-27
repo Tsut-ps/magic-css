@@ -29,7 +29,9 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 } */
 
 /* 最大行数指定(ツイート) */
-[aria-label^="タイムライン:"] {
+[aria-label="タイムライン: ホームタイムライン"],
+[aria-label="タイムライン: タイムラインを検索"],
+[aria-label="タイムライン: 通知"] {
 	[data-testid="tweetText"],
 	[data-testid="notification"] {
 		display: -webkit-box;
