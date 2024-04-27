@@ -29,20 +29,31 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 } */
 
 /* 最大行数指定(ツイート) */
-[aria-label="タイムライン: ホームタイムライン"],
-[aria-label="タイムライン: タイムラインを検索"] {
-	[data-testid="tweetText"] {
+[aria-label^="タイムライン:"] {
+	[data-testid="tweetText"],
+	[data-testid="notification"] {
 		display: -webkit-box;
 		overflow: hidden;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 6 !important;
 	}
-}
+	
+	/* 通知 自身のツイートに対して適用 */
+	&[aria-label="タイムライン: 通知"] [data-testid="notification"] {
+		[data-testid="tweetText"] {
+			-webkit-line-clamp: 3 !important;
+		}
 
-
-/* 最大行数指定(引用) */
-.r-1fz3rvf .r-14gqq1x {
-	-webkit-line-clamp: 3 !important;
+		/* さらに表示 非表示 */
+		[data-testid="tweet-text-show-more-link"] {
+			display: none;
+		}
+	}
+	
+	/* 引用元ツイート */
+	.r-1fz3rvf .r-14gqq1x {
+		-webkit-line-clamp: 3 !important;
+	}
 }
 
 /* 通知バッジ 非表示 */
@@ -67,14 +78,6 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 }
 .r-1ssbvtb .r-1adg3ll.r-1udh08x:has([aria-label="埋め込み動画"]) {
 	max-height: 320px;
-}
-
-/* 引用文章 行数調節 */
-[aria-label^="タイムライン"] .r-1fz3rvf .r-14gqq1x {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 5;
 }
 
 /* アカウントメニュー 非表示
