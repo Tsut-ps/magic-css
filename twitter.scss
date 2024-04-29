@@ -120,13 +120,23 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 	width: 100%;
 }*/
 
-/* 検索で 認証ユーザー(Blue) の表示優先度を下げる */
-/* 引用動画 の表示優先度を下げる */
+/* 検索で表示優先度を下げる */
 [aria-label="タイムライン: タイムラインを検索"] article {
-	&:has(.r-zl2h9q [aria-label="認証済みアカウント"].r-1cvl2hr),
+	/*  認証ユーザー(Blue)
+	&:has(.r-zl2h9q [aria-label="認証済みアカウント"].r-1cvl2hr), 
+	*/
+	
+	/* 引用された動画 */
 	&:has([aria-label$="さんから"]) {
-		max-height: 80px;
-		opacity: 20%;
+		/* ツイートの不透明度を下げる */
+		[dir="auto"] {
+			opacity: 0.33;
+		}
+		
+		/* 動画を非表示 */
+		.r-9aw3ui.r-1s2bzr4 {
+			display: none;
+		}
 	}
 }
 
