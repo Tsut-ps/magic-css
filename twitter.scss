@@ -187,3 +187,8 @@ a[href="/kokonkr/verified_followers"] .r-1b43r93:first-child {
 		}
 	}
 }
+
+/* タブリスト 余白サイズ 調整 */
+[aria-label="ホームタイムライン"] [role="tablist"] [role="tab"] {
+	padding-inline: 1em;
+}
