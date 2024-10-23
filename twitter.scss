@@ -16,11 +16,14 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 
 /* TL 横幅変更 */
 .r-1ye8kvj { 
-	max-width: 640px;
-	/* d: 640px */
+	max-width: 640px; 
+/*	max-width: 720px; */
 }
 .r-10f7w94 {
-    margin-left: 2em;
+    margin-inline: 1em 2em;
+/*	position: absolute;
+	top: 0;
+	right: 0; */
 }
 .r-1l8l4mf {
 	margin-left: 1em;
@@ -78,8 +81,8 @@ svg.r-lrsllp.r-8kz0gk > g > path {
 }
 
 /* 画像・動画最大サイズ 固定 */
-.r-kzbkwu .r-1s2bzr4 a > div.r-1udh08x.r-1adg3ll {
-	max-height: 280px;
+[data-testid="cellInnerDiv"] .r-1s2bzr4 .css-175oi2r.r-1adg3ll.r-1udh08x {
+	max-height: 320px;
 }
 .r-1ssbvtb .r-1adg3ll.r-1udh08x:has([aria-label="埋め込み動画"]) {
 	max-height: 320px;
@@ -174,7 +177,7 @@ a[href="/kokonkr/verified_followers"] .r-1b43r93:first-child {
 
 /* トレンドタブを薄くする */
 [aria-label="タイムライン: トレンド"] {
-	opacity: 0.33
+	opacity: 0.33;
 }
 
 /* 自身のページでアクションバーを非表示 */
@@ -192,3 +195,26 @@ a[href="/kokonkr/verified_followers"] .r-1b43r93:first-child {
 [aria-label="ホームタイムライン"] [role="tablist"] [role="tab"] {
 	padding-inline: 1em;
 }
+
+/* 左側サイドバーを左寄せ 
+[role="banner"] {
+	align-items: flex-start;
+	margin-left: 1em;
+	max-width: 275px;
+} */
+
+/* サイドバー左側 余白なし 
+.r-pt392 {
+	margin-left: 0;
+} */
+
+/* TL 中央に配置 
+main .r-2llsf.r-1wtj0ep {
+    padding-right: 350px;
+    justify-content: center;
+} */
+
+/* TL+右側サイドバー 横幅を可能な限りfill 
+.r-113js5t {
+    width: -webkit-fill-available;
+} */
