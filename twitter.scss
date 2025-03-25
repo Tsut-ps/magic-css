@@ -196,6 +196,16 @@ a[href="/kokonkr/verified_followers"] .r-1b43r93:first-child {
 	padding-inline: 1em;
 }
 
+/* プロフィール 自己紹介 高さ調整 */
+[role="dialog"] textarea {
+	min-height: 7em;
+}
+
+/* スペース 字幕 高さ調整 */
+.css-175oi2r.r-yfoy6g.r-wp4asp.r-is05cd.r-vmopo1.r-bnwqim.r-13qz1uu {
+	min-height: 10em;
+}
+
 /* 左側サイドバーを左寄せ 
 [role="banner"] {
 	align-items: flex-start;
