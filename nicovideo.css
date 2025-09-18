@@ -3,9 +3,9 @@
   .UserPage-container:has(.TimelinePage) {
     .UserPage-main {
       width: 100%;
-      max-width: calc(400px * 3 + 800px);
-      @media (max-width: 2000px) {
-        max-width: calc(400px * 2 + 710px);
+      max-width: calc(500px * 4);
+	    @media (max-width: 2010px) {
+        max-width: calc(500px * 3 + 10px);
       }
     }
     .Timeline {
