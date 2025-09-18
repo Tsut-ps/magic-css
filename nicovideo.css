@@ -45,7 +45,7 @@
       overflow: hidden;
     }
     .Timeline-activitiesByTime {
-      display: contents !important;
+      display: contents;
     }
     .RightSideContainer {
       left: initial;
