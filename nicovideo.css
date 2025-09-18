@@ -1,0 +1,57 @@
+// フォロー新着をYouTube風にタイル表示
+@media (min-width: 1600px) {
+  .UserPage-container:has(.TimelinePage) {
+    .UserPage-main {
+      width: 100%;
+      max-width: calc(400px * 3 + 800px);
+      @media (max-width: 2000px) {
+        max-width: calc(400px * 2 + 710px);
+      }
+    }
+    .Timeline {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .TimelinePage-content {
+      max-width: calc(100% - 200px);
+      width: fit-content;
+    }
+    .TimelineItem-activityMessage,
+    .Timeline-divider {
+      display: none;
+    }
+    .TimelineItem-content {
+      width: min-content;
+    }
+    .TimelineItem-contentMenu {
+      z-index: 100;
+    }
+    .TimelineItem-contentBody {
+      flex-direction: column;
+    }
+    .TimelineVideoThumbnail,
+    .TimelineItem-contentThumbnailImage {
+      border-radius: 0;
+      width: 400px;
+      height: initial;
+      aspect-ratio: 16 / 9;
+    }
+    .TimelineItem-header {
+      white-space: nowrap;
+      max-width: 300px;
+    }
+    .TimelineItem-content {
+      overflow: hidden;
+    }
+    .Timeline-activitiesByTime {
+      display: contents !important;
+    }
+    .RightSideContainer {
+      left: initial;
+      margin-left: initial;
+      right: 0;
+      margin-right: 16px;
+    }
+  }
+}
