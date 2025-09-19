@@ -17,7 +17,7 @@ https://matcha14.com/chrome-live-editor-for-css/
 
 ## スクリーンショット
 
-### Twitter
+### Twitter（X）
 
 TL面積が長くなり、画像高さや各ツイートの最大行数に制限を設けるなどで、1画面あたりの情報量が増えます。
 
@@ -29,3 +29,10 @@ TL面積が長くなり、画像高さや各ツイートの最大行数に制限
 （画像：ひみどりさん）
 
 ![image](https://github.com/Tsut-ps/magic-css/assets/73014392/0e645a7e-5312-4008-9aa3-9750ecf08f6d)
+
+### ニコニコ動画
+
+フォロー新着が最大横並び3列になります。
+
+<img width="1942" height="872" alt="image" src="https://github.com/user-attachments/assets/aa6a608d-00fe-4b3a-9be5-1af5cd481300" />
+
