@@ -1,6 +1,7 @@
 # Magic CSS 用のカスタムCSS
 
-Scssと仲良くしたい……！
+~~Scssと仲良くしたい……！~~  
+もうほとんどプレーンのCSSでもScss並のことができてしまう世界になりました。
 
 ## Magic CSSとは
 - 別名：Live editor for CSS
