@@ -37,3 +37,8 @@ TL面積が長くなり、画像高さや各ツイートの最大行数に制限
 
 <img width="1942" height="872" alt="image" src="https://github.com/user-attachments/assets/aa6a608d-00fe-4b3a-9be5-1af5cd481300" />
 
+### GitHub
+
+公開しているリポジトリを示す「Public」がグレーから緑色になって、ちょっとわかりやすくなります
+
+<img width="586" height="449" alt="image" src="https://github.com/user-attachments/assets/a8aa7f8b-56c2-4e97-89e9-ee4812807521" />
