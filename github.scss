@@ -1,0 +1,12 @@
+// GitHubのパブリックリポジトリのバッチを緑色にする
+.public .Label.Label--secondary {
+  --label-r: 31;
+  --label-g: 136;
+  --label-b: 61;
+  --label-h: 137;
+  --label-s: 63;
+  --label-l: 33;
+
+  color: hsl(var(--label-h), calc(var(--label-s) * 0.88%), 47%);
+  border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), 42%, 0.5);
+}
